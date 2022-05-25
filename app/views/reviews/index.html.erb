@@ -1,0 +1,7 @@
+<ul>
+  <% @reviews.each do |review| %>
+    <li><%= review.rating %> <%= review.content %></a></li>
+  <% end %>
+</ul>
+
+<a href="restaurants/<%= @restaurant.id %>">Go back to restaurant page</a>
